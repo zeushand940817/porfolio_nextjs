@@ -1,6 +1,13 @@
 @import "styles";
 
 .menu {
-  font-size: $font-size;
   font-family: $font-main;
+  font-size: 24px;
+  ul {
+    list-style: none;
+    a {
+      color: $color-primary;
+      text-decoration: none;
+    }
+  }
 }
