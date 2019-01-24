@@ -1,4 +1,5 @@
 @import "styles";
+$animation-time: 0.8s;
 
 .menu {
   font-family: $font-secondary;
@@ -8,9 +9,13 @@
     color: $color-primary;
     text-decoration: none;
     cursor: pointer;
+    transition: $animation-time;
+    &:hover {
+      color: $color-secondary;
+    }
   }
   ul.nav {
-    margin: 40px 0;
+    margin: 50px 0 40px;
     padding: 0;
     list-style: none;
     /*Hover effect heavliy borrowed from
@@ -29,7 +34,7 @@
       content: "";
       position: absolute;
       width: 0%;
-      height: 2px;
+      height: 4px;
       top: 50%;
       margin-top: -0.5px;
       background: #color-bg;
@@ -40,12 +45,12 @@
     }
     span:after {
       right: 2.5px;
-      background: $color-primary;
+      background: $color-secondary;
       transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
     }
 
     span:hover:before {
-      background: $color-primary;
+      background: $color-secondary;
       width: 100%;
       transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     }
@@ -58,6 +63,7 @@
   }
   ul.social {
     font-size: 14px;
+    padding: 0;
     cursor: pointer;
     color: $color-primary;
     list-style-type: none;
