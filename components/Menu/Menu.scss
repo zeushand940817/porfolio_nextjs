@@ -45,12 +45,12 @@ $animation-time: 0.8s;
     }
     span:after {
       right: 2.5px;
-      background: $color-secondary;
+      background: #cd5554;
       transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
     }
 
     span:hover:before {
-      background: $color-secondary;
+      background: #cd5554;
       width: 100%;
       transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     }
