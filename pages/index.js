@@ -1,6 +1,8 @@
 import Layout from "../components/MyLayout.js";
 import Link from "next/link";
 
+import "../styles.scss";
+
 function getPosts() {
   return [
     { id: "hello-nextjs", title: "Hello Next.js" },
@@ -12,7 +14,7 @@ function getPosts() {
 const PostLink = ({ post }) => (
   <li>
     <Link as={`/p/${post.id}`} href={`/post?title=${post.title}`}>
-      <a>{post.title}</a>
+      <a className="example">{post.title}</a>
     </Link>
     <style jsx>{`
       li {
