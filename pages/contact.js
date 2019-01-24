@@ -2,6 +2,6 @@ import Layout from "../components/Layout/Layout.js";
 
 export default () => (
   <Layout>
-    <p>This is the about page</p>
+    <p>This is the contact Page</p>
   </Layout>
 );

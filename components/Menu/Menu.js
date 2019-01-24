@@ -7,42 +7,62 @@ const linkStyle = {
 
 const Menu = () => (
   <div className="menu">
+    <h1>JP Kubala</h1>
     <ul>
       <li>
         <Link href="/">
-          <a className="header" style={linkStyle}>
+          <a>
             <span>Work</span>
           </a>
         </Link>
       </li>
       <li>
-        <Link href="/about">
-          <a style={linkStyle}>Films</a>
+        <Link href="/">
+          <a>
+            <span>Films</span>
+          </a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/">
+          <a>
+            <span>Stills</span>
+          </a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/">
+          <a>
+            <span>Code</span>
+          </a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/">
+          <a>
+            <span>3D</span>
+          </a>
         </Link>
       </li>
       <li>
         <Link href="/about">
-          <a style={linkStyle}>Stills</a>
+          <a>
+            <span>About</span>
+          </a>
         </Link>
       </li>
       <li>
-        <Link href="/about">
-          <a style={linkStyle}>Code</a>
+        <Link href="/thoughts">
+          <a>
+            <span>Thoughts</span>
+          </a>
         </Link>
       </li>
       <li>
-        <Link href="/about">
-          <a style={linkStyle}>3D</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/about">
-          <a style={linkStyle}>Thoughts</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/about">
-          <a style={linkStyle}>Contact</a>
+        <Link href="/contact">
+          <a>
+            <span>Contact</span>
+          </a>
         </Link>
       </li>
     </ul>
