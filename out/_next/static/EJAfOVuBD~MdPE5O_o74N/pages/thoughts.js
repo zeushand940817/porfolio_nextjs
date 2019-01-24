@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{342:function(t,e,n){__NEXT_REGISTER_PAGE("/thoughts",function(){return t.exports=n(343),{page:t.exports.default}})},343:function(t,e,n){"use strict";n.r(e);var u=n(0),a=n.n(u),o=n(18);e.default=function(){return a.a.createElement(o.a,null,a.a.createElement("p",null,"This is the thoughts page"))}}},[[342,1,0,2]]]);

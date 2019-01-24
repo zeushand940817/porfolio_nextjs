@@ -1,11 +1,95 @@
-.example {
-  font-size: 50px; }
+@import url(https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans);
+@import url(https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans);
+@import url(https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans);
+body {
+  background-color: #f6f5f3; }
 
-.header {
-  font-size: 50px; }
+h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  margin: 5px 0;
+  text-transform: uppercase;
+  font-weight: 900; }
 
-.example {
-  font-size: 50px; }
+.menu {
+  font-family: "Work Sans", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase; }
+  .menu a {
+    color: #3d3d3f;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.8s; }
+    .menu a:hover {
+      color: #8e8e90; }
+  .menu ul.nav {
+    margin: 50px 0 40px;
+    padding: 0;
+    list-style: none;
+    /*Hover effect heavliy borrowed from
+    https://codepen.io/tsimenis/pen/BKdENX */ }
+    .menu ul.nav li {
+      display: table;
+      width: auto; }
+    .menu ul.nav span {
+      position: relative;
+      display: block; }
+    .menu ul.nav span:before,
+    .menu ul.nav span:after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 4px;
+      top: 50%;
+      margin-top: -0.5px;
+      background: #color-bg; }
+    .menu ul.nav span:before {
+      left: -2.5px; }
+    .menu ul.nav span:after {
+      right: 2.5px;
+      background: #cd5554;
+      transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); }
+    .menu ul.nav span:hover:before {
+      background: #cd5554;
+      width: 100%;
+      transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
+    .menu ul.nav span:hover:after {
+      background: transparent;
+      width: 100%;
+      transition: 0s; }
+  .menu ul.social {
+    font-size: 14px;
+    padding: 0;
+    cursor: pointer;
+    color: #3d3d3f;
+    list-style-type: none; }
+    .menu ul.social li {
+      padding: 0 10px;
+      display: inline-block; }
+
+body {
+  background-color: #f6f5f3; }
+
+h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  margin: 5px 0;
+  text-transform: uppercase;
+  font-weight: 900; }
+
+.layout {
+  display: flex;
+  margin: 50px; }
+
+body {
+  background-color: #f6f5f3; }
+
+h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  margin: 5px 0;
+  text-transform: uppercase;
+  font-weight: 900; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
