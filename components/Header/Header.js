@@ -6,7 +6,7 @@ const linkStyle = {
 };
 
 const Header = () => (
-  <div>
+  <div className="menu">
     <Link href="/">
       <a className="header" style={linkStyle}>
         Work
