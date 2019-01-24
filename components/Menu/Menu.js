@@ -11,7 +11,7 @@ const Menu = () => (
       <li>
         <Link href="/">
           <a className="header" style={linkStyle}>
-            Work
+            <span>Work</span>
           </a>
         </Link>
       </li>
