@@ -1,5 +1,6 @@
 import Layout from "../components/Layout/Layout.js";
 import Link from "next/link";
+import Head from "next/head";
 
 import "../styles.scss";
 
@@ -36,36 +37,48 @@ const PostLink = ({ post }) => (
 );
 
 export default () => (
-  <Layout>
-    <h1>My Blog</h1>
-    <ul>
-      {getPosts().map(post => (
-        <PostLink key={post.id} post={post} />
-      ))}
-    </ul>
-    <style jsx>{`
-      h1,
-      a {
-        font-family: "Arial";
-      }
+  <div>
+    <Head>
+      <title>JP Kubala</title>
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous"
+      />
+    </Head>
 
-      ul {
-        padding: 0;
-      }
+    <Layout>
+      <h1>My Blog</h1>
+      <ul>
+        {getPosts().map(post => (
+          <PostLink key={post.id} post={post} />
+        ))}
+      </ul>
+      <style jsx>{`
+        h1,
+        a {
+          font-family: "Arial";
+        }
 
-      li {
-        list-style: none;
-        margin: 5px 0;
-      }
+        ul {
+          padding: 0;
+        }
 
-      a {
-        text-decoration: none;
-        color: blue;
-      }
+        li {
+          list-style: none;
+          margin: 5px 0;
+        }
 
-      a:hover {
-        opacity: 0.6;
-      }
-    `}</style>
-  </Layout>
+        a {
+          text-decoration: none;
+          color: blue;
+        }
+
+        a:hover {
+          opacity: 0.6;
+        }
+      `}</style>
+    </Layout>
+  </div>
 );

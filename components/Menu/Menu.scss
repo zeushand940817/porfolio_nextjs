@@ -1,56 +1,66 @@
 @import "styles";
 
 .menu {
-  font-family: $font-main;
-  font-size: 24px;
-  text-transform: capitalize;
-  ul {
-    list-style: none;
-    a {
-      color: $color-primary;
-      text-decoration: none;
-    }
-    /*Hover effect heavliy borrowed from
+  font-family: $font-secondary;
+  font-size: 40px;
+  text-transform: uppercase;
+  a {
+    color: $color-primary;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .nav {
+    ul {
+      margin: 40px 0;
+      padding: 0;
+      list-style: none;
+      /*Hover effect heavliy borrowed from
     https://codepen.io/tsimenis/pen/BKdENX */
-    li {
-      display: table;
-      width: auto;
-    }
-    span {
-      position: relative;
-      display: block;
-      cursor: pointer;
-    }
-    span:before,
-    span:after {
-      content: "";
-      position: absolute;
-      width: 0%;
-      height: 2px;
-      top: 50%;
-      margin-top: -0.5px;
-      background: #fff;
-    }
+      li {
+        display: table;
+        width: auto;
+      }
+      span {
+        position: relative;
+        display: block;
+        // cursor: pointer;
+      }
+      span:before,
+      span:after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        top: 50%;
+        margin-top: -0.5px;
+        background: #fff;
+      }
 
-    span:before {
-      left: -2.5px;
-    }
-    span:after {
-      right: 2.5px;
-      background: #000;
-      transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-    }
+      span:before {
+        left: -2.5px;
+      }
+      span:after {
+        right: 2.5px;
+        background: #000;
+        transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
 
-    span:hover:before {
-      background: #000;
-      width: 100%;
-      transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-    }
+      span:hover:before {
+        background: #000;
+        width: 100%;
+        transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
 
-    span:hover:after {
-      background: transparent;
-      width: 100%;
-      transition: 0s;
+      span:hover:after {
+        background: transparent;
+        width: 100%;
+        transition: 0s;
+      }
     }
+  }
+  .social {
+    font-size: 12px;
+    cursor: pointer;
+    color: $color-primary;
   }
 }

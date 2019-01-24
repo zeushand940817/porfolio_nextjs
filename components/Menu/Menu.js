@@ -7,40 +7,16 @@ const linkStyle = {
 
 const Menu = () => (
   <div className="menu">
-    <h1>JP Kubala</h1>
-    <ul>
+    <Link href="/">
+      <a>
+        <h1>JP Kubala</h1>
+      </a>
+    </Link>
+    <ul className="nav">
       <li>
         <Link href="/">
           <a>
             <span>Work</span>
-          </a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/">
-          <a>
-            <span>Films</span>
-          </a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/">
-          <a>
-            <span>Stills</span>
-          </a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/">
-          <a>
-            <span>Code</span>
-          </a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/">
-          <a>
-            <span>3D</span>
           </a>
         </Link>
       </li>
@@ -65,6 +41,33 @@ const Menu = () => (
           </a>
         </Link>
       </li>
+    </ul>
+    <ul className="social">
+      <a href="https://github.com/kubalaj">
+        <li>
+          <i className="fab fa-github" />
+        </li>
+      </a>
+      <a href="https://500px.com/paul_danger_kub">
+        <li>
+          <i className="fab fa-500px" />
+        </li>
+      </a>
+      <a href="https://vimeo.com/jpkubala">
+        <li>
+          <i className="fab fa-vimeo-v" />
+        </li>
+      </a>
+      <a href="https://www.linkedin.com/in/jpkubala/">
+        <li>
+          <i className="fab fa-linkedin-in" />
+        </li>
+      </a>
+      <a href="https://www.instagram.com/paul_danger_kub/">
+        <li>
+          <i className="fab fa-instagram" />
+        </li>
+      </a>
     </ul>
   </div>
 );
