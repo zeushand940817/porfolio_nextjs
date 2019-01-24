@@ -1,7 +1,8 @@
-import Menu from "./Menu/Menu";
+import Menu from "../Menu/Menu";
+import "./Layout.scss";
 
 const Layout = props => (
-  <div>
+  <div className="layout">
     <Menu />
     {props.children}
   </div>
