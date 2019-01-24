@@ -1,4 +1,8 @@
+@import "modules/_typography";
+@import "modules/_colors";
+
 $font-size: 50px;
 .example {
-  font-size: $font-size;
+  font-size: $font-main;
+  color: $color-primary !important;
 }
