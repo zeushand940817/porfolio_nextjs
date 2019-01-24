@@ -4,7 +4,7 @@ import "./Layout.scss";
 const Layout = props => (
   <div className="layout">
     <Menu />
-    {props.children}
+    <div className="children">{props.children}</div>
   </div>
 );
 
