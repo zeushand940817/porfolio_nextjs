@@ -1,8 +1,8 @@
-import Header from "./Header/Header";
+import Menu from "./Menu/Menu";
 
 const Layout = props => (
   <div>
-    <Header />
+    <Menu />
     {props.children}
   </div>
 );
