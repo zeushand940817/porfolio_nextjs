@@ -25,13 +25,23 @@ p {
 input,
 textarea {
   display: block;
-  width: 200px;
+  width: 300px;
   padding: 10px;
   margin: 10px 0;
   font-family: $font-main;
   border: 1px solid $color-primary;
   background: $color-bg;
-  &:active {
+  &:focus {
     border: 1px solid $color-accent;
+    outline-color: $color-accent;
+  }
+}
+input[type="submit"] {
+  cursor: pointer;
+  transition: 0.8s;
+  &:hover {
+    color: $color-accent;
+    border: 1px solid $color-accent;
+    outline-color: $color-accent;
   }
 }
