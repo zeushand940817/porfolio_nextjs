@@ -4,3 +4,15 @@
   display: flex;
   margin: 50px;
 }
+.children {
+  margin-left: 150px;
+}
+.brick {
+  img {
+    max-width: 600px;
+  }
+  .caption {
+    font-family: $font-main;
+    font-size: 13px;
+  }
+}

@@ -13,3 +13,12 @@ h1 {
   text-transform: uppercase;
   font-weight: 900;
 }
+h2 {
+  font-family: $font-secondary;
+  font-size: 48px;
+  margin-top: 0;
+}
+p {
+  font-family: $font-main;
+  font-size: 14px;
+}
