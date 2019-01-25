@@ -8,10 +8,9 @@ export default () => (
       movies, I love to talk.
     </p>
     <form action="https://formspree.io/jp@jpkubala.com" method="POST">
-      <label>Name</label>
-      <input type="text" name="name" />
-      <input type="text" name="name" />
-      <textarea type="text" name="name" />
+      <input type="text" autofocus="autofocus" placeholder="Name" name="name" />
+      <input type="text" name="name" placeholder="Email" />
+      <textarea type="text" name="name" placeholder="Message" />
       <input type="submit" value="Submit" />
     </form>
   </Layout>
