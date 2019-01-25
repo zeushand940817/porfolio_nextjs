@@ -1,5 +1,6 @@
 @import "modules/_typography";
 @import "modules/_colors";
+@import "modules/_grid";
 
 $font-size: 50px;
 
@@ -43,5 +44,16 @@ input[type="submit"] {
     color: $color-accent;
     border: 1px solid $color-accent;
     outline-color: $color-accent;
+  }
+}
+.contact {
+  h2 {
+    margin-bottom: 0;
+  }
+  .col {
+    margin: 10px 0px;
+    &:first-child {
+      margin-right: 50px;
+    }
   }
 }
