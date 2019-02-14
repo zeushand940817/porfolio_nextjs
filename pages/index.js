@@ -1,61 +1,95 @@
+import Brick from "../components/Brick/Brick.js";
 import Layout from "../components/Layout/Layout.js";
 import Link from "next/link";
-import Head from "next/head";
-
 import "../styles.scss";
-
-const HeadContent = () => (
-  <Head>
-    <title>JP Kubala</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
-  </Head>
-);
-
-const Brick = () => (
-  <div className="wall">
-    <div className="brick">
-      <div class="pixels-photo">
-        <p>
-          <img
-            src="https://drscdn.500px.org/photo/228036047/m%3D900/v2?user_id=9643357&webp=true&sig=52dc2f0241948f9b16917788e9101d9a44187aac4716397e0662d1c7aac2e7b2"
-            alt="Backside Sand Dunes by Paul Kubala on 500px.com"
-          />
-        </p>
-        <a
-          href="https://500px.com/photo/228036047/backside-sand-dunes-by-paul-kubala"
-          alt="Backside Sand Dunes by Paul Kubala on 500px.com"
-        />
-      </div>
-      <div className="caption">Southwest Colorado Photojournalism</div>
-    </div>
-    <div className="brick">
-      <div class="pixels-photo">
-        <p>
-          <img
-            src="https://drscdn.500px.org/photo/228036047/m%3D900/v2?user_id=9643357&webp=true&sig=52dc2f0241948f9b16917788e9101d9a44187aac4716397e0662d1c7aac2e7b2"
-            alt="Backside Sand Dunes by Paul Kubala on 500px.com"
-          />
-        </p>
-        <a
-          href="https://500px.com/photo/228036047/backside-sand-dunes-by-paul-kubala"
-          alt="Backside Sand Dunes by Paul Kubala on 500px.com"
-        />
-      </div>
-      <div className="caption">Iceland Photojournalism</div>
-    </div>
-  </div>
-);
 
 export default () => (
   <div>
-    <HeadContent />
     <Layout>
-      <Brick />
+      <div className="wall">
+        <Link href="/oblongadventure">
+          <div
+            style={{
+              width: "60%",
+              height: "370px",
+              margin: "10px"
+            }}
+          >
+            <Brick
+              title="The Oblong Adventure"
+              source="/static/the_oblong_adventure/hero.png"
+            />
+          </div>
+        </Link>
+        <Link href="/tictactoe">
+          <div
+            style={{
+              width: "30%",
+              height: "360px",
+              margin: "10px"
+            }}
+          >
+            <Brick
+              title="Tic Tac Toe Game"
+              source="/static/tic_tac_toe/hero.png"
+            />
+          </div>
+        </Link>
+        <div
+          style={{
+            width: "60%",
+            height: "500px",
+            margin: "10px"
+          }}
+        >
+          <Brick
+            title="Southwest Colorado Photojournalism"
+            source="/static/sw-colorado/IMG_9838.png"
+          />
+        </div>
+        <Link href="/pacman">
+          <div
+            style={{
+              width: "30%",
+              height: "240px",
+              margin: "10px"
+            }}
+          >
+            <Brick
+              title="openGL Pacman P.O.C."
+              source="/static/pacman/pacman.gif"
+            />
+          </div>
+        </Link>
+        <Link href="/themess">
+          <div
+            style={{
+              width: "45%",
+              height: "400px",
+              margin: "10px"
+            }}
+          >
+            <Brick
+              title="The Mess 16mm Film"
+              source="/static/the_mess/theMess.gif"
+            />
+          </div>
+        </Link>
+        <Link href="/iremember">
+          <div
+            style={{
+              width: "45%",
+              height: "340px",
+              margin: "10px"
+            }}
+          >
+            <Brick
+              title="I Remember 16mm Film"
+              source="/static/i_remember/Iremember.gif"
+            />
+          </div>
+        </Link>
+      </div>
     </Layout>
   </div>
 );

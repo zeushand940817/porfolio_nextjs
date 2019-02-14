@@ -1,21 +1,17 @@
 @import "styles";
-$animation-time: 0.8s;
 
 .menu {
   font-family: $font-secondary;
-  font-size: 40px;
+  font-size: 18px;
   text-transform: uppercase;
+  min-width: 165px;
   a {
     color: $color-primary;
     text-decoration: none;
     cursor: pointer;
-    transition: $animation-time;
-    &:hover {
-      color: $color-secondary;
-    }
   }
   ul.nav {
-    margin: 50px 0 40px;
+    margin: 20px 0 40px;
     padding: 0;
     list-style: none;
     /*Hover effect heavliy borrowed from
@@ -23,18 +19,18 @@ $animation-time: 0.8s;
     li {
       display: table;
       width: auto;
+      padding-top: 10px;
     }
     span {
       position: relative;
       display: block;
-      // cursor: pointer;
     }
     span:before,
     span:after {
       content: "";
       position: absolute;
       width: 0%;
-      height: 4px;
+      height: 2px;
       top: 50%;
       margin-top: -0.5px;
       background: #color-bg;
@@ -45,14 +41,12 @@ $animation-time: 0.8s;
     }
     span:after {
       right: 2.5px;
-      background: $color-accent;
-      transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+      background: $color-primary;
     }
 
     span:hover:before {
-      background: $color-accent;
+      background: $color-primary;
       width: 100%;
-      transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     }
 
     span:hover:after {
