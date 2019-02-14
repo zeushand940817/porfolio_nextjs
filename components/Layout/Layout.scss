@@ -23,7 +23,7 @@
       width: 30%;
     }
     &-50 {
-      width: 45%;
+      width: 50%;
     }
     &-100 {
       width: 100%;
@@ -33,12 +33,12 @@
 .about {
   margin: 0 100px;
   img {
-    max-width: 100%;
+    width: 100%;
   }
   p {
     font-family: $font-secondary;
     font-size: 16px;
-    margin-right: 50%;
-    margin-left: 10%;
+    padding-right: 60%;
+    padding-left: 5%;
   }
 }
