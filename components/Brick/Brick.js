@@ -7,15 +7,8 @@ class Brick extends React.Component {
     return (
       <Link href={this.props.link}>
         <div className="brick">
-          <div
-            className="photo"
-            style={{
-              backgroundImage: `url(${this.props.source})`
-            }}
-          >
-            <div className="pic" />
-            <div className="caption">{this.props.title}</div>
-          </div>
+          <img src={this.props.source} />
+          <div className="caption">{this.props.title}</div>
         </div>
       </Link>
     );
