@@ -21,7 +21,7 @@ h2 {
   text-transform: uppercase;
 }
 p {
-  font-family: $font-main;
+  font-family: $font-secondary;
   font-size: 14px;
 }
 a {
@@ -54,13 +54,11 @@ input[type="submit"] {
   }
 }
 .contact {
-  h2 {
-    margin-bottom: 0;
-  }
-  .col {
-    margin: 10px 0px;
-    &:first-child {
-      margin-right: 50px;
+  margin: 0 100px;
+  p {
+    line-height: 24px;
+    &:last-child {
+      margin-top: 40px;
     }
   }
 }
