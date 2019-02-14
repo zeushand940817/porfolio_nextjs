@@ -4,8 +4,8 @@ $break-lg: 1024px;
 $break-xl: 1366px;
 $break-xxl: 1760px;
 
-$break-sm: "screen and (min-width: 375px)";
-$break-md: "screen and (min-width: 768px)";
-$break-lg: "screen and (min-width: 1024px)";
-$break-xl: "screen and (min-width: 1366px)";
-$break-xxl: "screen and (min-width: 1760px)";
+$break-sm: "screen and (max-width: 375px)";
+$break-md: "screen and (max-width: 768px)";
+$break-lg: "screen and (max-width: 1024px)";
+$break-xl: "screen and (max-width: 1366px)";
+$break-xxl: "screen and (max-width: 1760px)";
