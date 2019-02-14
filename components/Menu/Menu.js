@@ -1,12 +1,22 @@
 import Link from "next/link";
 import "./Menu.scss";
+import Head from "next/head";
 
-const linkStyle = {
-  marginRight: 15
-};
+const HeadContent = () => (
+  <Head>
+    <title>JP Kubala</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+  </Head>
+);
 
 const Menu = () => (
   <div className="menu">
+    <HeadContent />
     <Link href="/">
       <a>
         <h1>JP Kubala</h1>
@@ -24,13 +34,6 @@ const Menu = () => (
         <Link href="/about">
           <a>
             <span>About</span>
-          </a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/thoughts">
-          <a>
-            <span>Thoughts</span>
           </a>
         </Link>
       </li>

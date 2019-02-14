@@ -1,0 +1,27 @@
+@import "styles";
+
+.brick {
+  width: 100%;
+  height: 100%;
+  .photo {
+    width: 100%;
+    height: 90%;
+    cursor: pointer;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .pic {
+    height: 100%;
+    &:hover {
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+  .caption {
+    margin-top: 10px;
+    margin-left: 5px;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}

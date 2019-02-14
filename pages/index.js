@@ -1,84 +1,95 @@
+import Brick from "../components/Brick/Brick.js";
 import Layout from "../components/Layout/Layout.js";
 import Link from "next/link";
-import Head from "next/head";
-
 import "../styles.scss";
-
-function getPosts() {
-  return [
-    { id: "hello-nextjs", title: "Hello Next.js" },
-    { id: "learn-nextjs", title: "Learn Next.js is awesome" },
-    { id: "deploy-nextjs", title: "Deploy apps with ZEIT" }
-  ];
-}
-
-const PostLink = ({ post }) => (
-  <li>
-    <Link as={`/p/${post.id}`} href={`/post?title=${post.title}`}>
-      <a className="example">{post.title}</a>
-    </Link>
-    <style jsx>{`
-      li {
-        list-style: none;
-        margin: 5px 0;
-      }
-
-      a {
-        text-decoration: none;
-        color: blue;
-        font-family: "Arial";
-      }
-
-      a:hover {
-        opacity: 0.6;
-      }
-    `}</style>
-  </li>
-);
 
 export default () => (
   <div>
-    <Head>
-      <title>JP Kubala</title>
-      <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous"
-      />
-    </Head>
-
     <Layout>
-      <h1>My Blog</h1>
-      <ul>
-        {getPosts().map(post => (
-          <PostLink key={post.id} post={post} />
-        ))}
-      </ul>
-      <style jsx>{`
-        h1,
-        a {
-          font-family: "Arial";
-        }
-
-        ul {
-          padding: 0;
-        }
-
-        li {
-          list-style: none;
-          margin: 5px 0;
-        }
-
-        a {
-          text-decoration: none;
-          color: blue;
-        }
-
-        a:hover {
-          opacity: 0.6;
-        }
-      `}</style>
+      <div className="wall">
+        <Link href="/oblongadventure">
+          <div
+            style={{
+              width: "60%",
+              height: "370px",
+              margin: "10px"
+            }}
+          >
+            <Brick
+              title="The Oblong Adventure"
+              source="/static/the_oblong_adventure/hero.png"
+            />
+          </div>
+        </Link>
+        <Link href="/tictactoe">
+          <div
+            style={{
+              width: "30%",
+              height: "360px",
+              margin: "10px"
+            }}
+          >
+            <Brick
+              title="Tic Tac Toe Game"
+              source="/static/tic_tac_toe/hero.png"
+            />
+          </div>
+        </Link>
+        <div
+          style={{
+            width: "60%",
+            height: "500px",
+            margin: "10px"
+          }}
+        >
+          <Brick
+            title="Southwest Colorado Photojournalism"
+            source="/static/sw-colorado/IMG_9838.png"
+          />
+        </div>
+        <Link href="/pacman">
+          <div
+            style={{
+              width: "30%",
+              height: "240px",
+              margin: "10px"
+            }}
+          >
+            <Brick
+              title="openGL Pacman P.O.C."
+              source="/static/pacman/pacman.gif"
+            />
+          </div>
+        </Link>
+        <Link href="/themess">
+          <div
+            style={{
+              width: "45%",
+              height: "400px",
+              margin: "10px"
+            }}
+          >
+            <Brick
+              title="The Mess 16mm Film"
+              source="/static/the_mess/theMess.gif"
+            />
+          </div>
+        </Link>
+        <Link href="/iremember">
+          <div
+            style={{
+              width: "45%",
+              height: "340px",
+              margin: "10px"
+            }}
+          >
+            <Brick
+              title="I Remember 16mm Film"
+              source="/static/i_remember/Iremember.gif"
+            />
+          </div>
+        </Link>
+      </div>
     </Layout>
   </div>
 );
