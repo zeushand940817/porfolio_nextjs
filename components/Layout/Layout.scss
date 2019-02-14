@@ -7,6 +7,9 @@
 .children {
   width: 100%;
   margin-left: 100px;
+  @media #{$break-md} {
+    margin-left: 0px;
+  }
 }
 .brick {
   .caption {
@@ -24,6 +27,9 @@
     }
     &-50 {
       width: 50%;
+      @media #{$break-sm} {
+        width: 100%;
+      }
     }
     &-100 {
       width: 100%;
@@ -32,13 +38,36 @@
 }
 .about {
   margin: 0 100px;
+  @media #{$break-md} {
+    margin: 0 50px;
+  }
   img {
     width: 100%;
   }
   p {
     font-family: $font-secondary;
     font-size: 16px;
-    padding-right: 60%;
-    padding-left: 5%;
+    margin-top: 0;
+    @media #{$break-sm} {
+      margin-top: 30px;
+    }
+    @media #{$break-md} {
+      font-size: 14px;
+      padding-right: 10%;
+      padding-left: 10%;
+    }
+    @media #{$break-lg} {
+      font-size: 14px;
+      padding-right: 10%;
+      padding-left: 10%;
+    }
+    @media #{$break-xl} {
+      padding-right: 15%;
+      padding-left: 10%;
+    }
+    @media #{$break-xxl} {
+      padding-right: 60%;
+      padding-left: 5%;
+    }
   }
 }
