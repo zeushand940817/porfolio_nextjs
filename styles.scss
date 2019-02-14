@@ -1,8 +1,7 @@
 @import "modules/_typography";
 @import "modules/_colors";
 @import "modules/_grid";
-
-$font-size: 50px;
+@import "modules/_breakpoints";
 
 body {
   background-color: $color-bg;

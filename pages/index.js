@@ -6,8 +6,8 @@ import "../styles.scss";
 export default () => (
   <div>
     <Layout>
-      <div className="content-main">
-        <div className="gutter">
+      <div className="content">
+        <div className="gutter-33">
           <Brick
             title="The Oblong Adventure"
             source="/static/the_oblong_adventure/detail.png"
@@ -19,7 +19,7 @@ export default () => (
             link="/pacman"
           />
         </div>
-        <div className="gutter">
+        <div className="gutter-33">
           <Brick
             title="Tic Tac Toe Game"
             source="/static/tic_tac_toe/hero.png"
@@ -31,7 +31,7 @@ export default () => (
             link="/themess"
           />
         </div>
-        <div className="gutter">
+        <div className="gutter-33">
           <Brick
             title="Southwest Colorado Photojournalism"
             source="/static/sw-colorado/IMG_9838.png"
