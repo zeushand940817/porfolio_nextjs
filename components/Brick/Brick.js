@@ -5,17 +5,13 @@ import "./Brick.scss";
 class Brick extends React.Component {
   render() {
     return (
-      <div className="brick">
-        <div
-          className="photo"
-          style={{
-            backgroundImage: `url(${this.props.source})`
-          }}
-        >
-          <div className="pic" />
+      <Link href={this.props.link}>
+        <div className="brick">
+          <img src={this.props.source} />
+          <div className="overlay" />
           <div className="caption">{this.props.title}</div>
         </div>
-      </div>
+      </Link>
     );
   }
 }

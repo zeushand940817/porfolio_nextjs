@@ -5,14 +5,20 @@
   margin: 50px;
 }
 .children {
+  width: 100%;
   margin-left: 100px;
 }
 .brick {
-  img {
-    max-width: 600px;
-  }
   .caption {
     font-family: $font-main;
     font-size: 13px;
+  }
+}
+.content-main {
+  display: flex;
+  flex-wrap: wrap;
+  .gutter {
+    margin: 17px;
+    width: 30%;
   }
 }
