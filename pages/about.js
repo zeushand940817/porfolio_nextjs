@@ -9,16 +9,18 @@ export default () => (
         alt="Standing in Awe, Bierstadt by Paul Kubala on 500px.com"
         className="me"
       />
-      <p>
-        Paul Kubala is a creative technolghist based out of Portland, Oregon who
-        loves to tell stories through different mediums. From photography, to
-        animation, to filmmaking, to creating interactive AR applications he
-        loves to push the boundries of art mixed with tehcnolghy.
-      </p>
-      <p>
-        When he is not working, you can catch him in the outdoors whitewater
-        kayaking, skiing, working on his camper van, or eating great tacos.
-      </p>
+      <div className="me text">
+        <p>
+          Paul Kubala is a creative technolghist based out of Portland, Oregon
+          who loves to tell stories through different mediums. From photography,
+          to animation, to filmmaking, to creating interactive AR applications
+          he loves to push the boundries of art mixed with tehcnolghy.
+        </p>
+        <p>
+          When he is not working, you can catch him in the outdoors whitewater
+          kayaking, skiing, working on his camper van, or eating great tacos.
+        </p>
+      </div>
     </div>
   </Layout>
 );

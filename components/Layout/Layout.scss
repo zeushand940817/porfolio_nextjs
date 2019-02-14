@@ -43,8 +43,12 @@
     margin-left: 10%;
   }
   .me {
-    width: 45%;
-    text-align: center;
+    width: 40%;
+    display: block;
     margin: 0 auto;
+  }
+  .text {
+    width: 45%;
+    padding-left: 5%;
   }
 }
