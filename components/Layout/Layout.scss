@@ -24,6 +24,12 @@
     &-33 {
       margin: 17px;
       width: 30%;
+      @media #{$break-sm} {
+        width: 100%;
+      }
+      @media #{$break-lg} {
+        width: 40%;
+      }
     }
     &-50 {
       width: 50%;
