@@ -14,11 +14,37 @@
     font-size: 13px;
   }
 }
-.content-main {
+.content {
   display: flex;
   flex-wrap: wrap;
   .gutter {
-    margin: 17px;
-    width: 30%;
+    &-33 {
+      margin: 17px;
+      width: 30%;
+    }
+    &-50 {
+      width: 45%;
+    }
+    &-100 {
+      width: 100%;
+    }
+  }
+}
+.about {
+  display: block;
+  margin: auto;
+  img {
+    max-width: 100%;
+  }
+  p {
+    font-family: $font-secondary;
+    font-size: 16px;
+    margin-right: 50%;
+    margin-left: 10%;
+  }
+  .me {
+    width: 45%;
+    text-align: center;
+    margin: 0 auto;
   }
 }
