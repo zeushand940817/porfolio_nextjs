@@ -15,7 +15,7 @@ export default () => (
           />
           <Brick
             title="openGL Pacman P.O.C."
-            source="/static/pacman/pacman.gif"
+            source="/static/pacman/hero.png"
             link="/pacman"
           />
         </div>
@@ -39,7 +39,7 @@ export default () => (
           />
           <Brick
             title="I Remember 16mm Film"
-            source="/static/i_remember/Iremember.gif"
+            source="/static/i_remember/hero.png"
             link="/iremember"
           />
         </div>
