@@ -13,11 +13,6 @@ export default () => (
           frameBorder="0"
           allowFullScreen
         />
-        <p>
-          <a href="https://vimeo.com/32404666">I Remember</a>
-          <a href="https://vimeo.com/jpkubala">J Paul Kubala</a>
-          <a href="https://vimeo.com">Vimeo</a>.
-        </p>
       </div>
       <div className="gutter-50">
         <p>
