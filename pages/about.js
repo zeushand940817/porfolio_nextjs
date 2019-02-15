@@ -12,7 +12,7 @@ export default () => (
         />
       </div>
       <div className="gutter-50">
-        <div>
+        <div className="description">
           <p>
             Paul Kubala is a creative technolghist based out of Portland, Oregon
             who loves to tell stories through different mediums. From

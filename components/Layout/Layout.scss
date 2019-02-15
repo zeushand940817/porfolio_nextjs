@@ -3,12 +3,24 @@
 .layout {
   display: flex;
   margin: 50px;
+  @media #{$break-sm} {
+    margin: 10px;
+    flex-wrap: wrap;
+  }
+  @media #{$break-md} {
+    margin: 10px;
+  }
+  @media #{$break-lg-only} {
+    margin: 30px;
+  }
 }
 .children {
   width: 100%;
-  margin-left: 100px;
-  @media #{$break-md} {
-    margin-left: 0px;
+  @media #{$break-sm} {
+    h2 {
+      font-size: 30px;
+      margin-top: 40px;
+    }
   }
 }
 .brick {
@@ -22,31 +34,33 @@
   flex-wrap: wrap;
   .gutter {
     &-33 {
-      margin: 17px;
+      margin: 5px;
       width: 30%;
-      @media #{$break-sm} {
-        width: 100%;
-      }
-      @media #{$break-lg} {
-        width: 40%;
-      }
     }
     &-50 {
       width: 50%;
-      @media #{$break-sm} {
-        width: 100%;
-      }
     }
     &-100 {
       width: 100%;
     }
   }
+  @media #{$break-sm} {
+    flex-wrap: wrap;
+    .gutter-33 {
+      width: 100%;
+    }
+    .gutter-50 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  @media #{$break-lg-only} {
+    flex-wrap: nowrap;
+  }
 }
 .about {
   margin: 0 100px;
-  @media #{$break-md} {
-    margin: 0 50px;
-  }
+
   img {
     width: 100%;
   }
@@ -54,26 +68,19 @@
     font-family: $font-secondary;
     font-size: 16px;
     margin-top: 0;
-    @media #{$break-sm} {
-      margin-top: 30px;
-    }
-    @media #{$break-md} {
+    padding-left: 20px;
+  }
+  @media #{$break-sm} {
+    margin: 0;
+  }
+  @media #{$break-md} {
+    margin: 20px;
+    p {
       font-size: 14px;
-      padding-right: 10%;
-      padding-left: 10%;
     }
-    @media #{$break-lg} {
-      font-size: 14px;
-      padding-right: 10%;
-      padding-left: 10%;
-    }
-    @media #{$break-xl} {
-      padding-right: 15%;
-      padding-left: 10%;
-    }
-    @media #{$break-xxl} {
-      padding-right: 60%;
-      padding-left: 5%;
+    .description {
+      padding-left: 10px;
+      padding-right: 30px;
     }
   }
 }

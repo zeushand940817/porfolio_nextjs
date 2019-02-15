@@ -4,17 +4,17 @@ import Brick from "../components/Brick/Brick.js";
 export default () => (
   <Layout>
     <h2>The Mess</h2>
-    <div className="wall detail">
-      <div className="col">
+    <div className="content video">
+      <div className="gutter-50">
         <iframe
           src="https://player.vimeo.com/video/36531214?byline=0&portrait=0"
-          width="640"
+          width="100%"
           height="480"
           frameBorder="0"
           allowFullScreen
         />
       </div>
-      <div className="col">
+      <div className="gutter-50">
         <p>
           The Mess is a 16mm film exploring Stop Motion Animation with film. The
           film is inspired by Disney's Fantasia and asks the question what

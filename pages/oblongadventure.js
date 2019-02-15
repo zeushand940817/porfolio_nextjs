@@ -4,13 +4,13 @@ import Brick from "../components/Brick/Brick.js";
 export default () => (
   <Layout>
     <h2>The Oblong Adventure</h2>
-    <div className="wall detail">
-      <div className="col">
+    <div className="content tech">
+      <div className="gutter-50">
         <a href="https://www.theoblongadventure.com/">
           <img src="/static/the_oblong_adventure/detail.png" />
         </a>
       </div>
-      <div className="col">
+      <div className="gutter-50">
         <p>
           The Oblong Adventure is a blog created with React, Gatsby and SCSS. It
           is a blog to display and showcase my passion for the outdoors. The

@@ -77,11 +77,25 @@ input[type="submit"] {
   }
   img {
     display: block;
-    max-width: 100%;
+    width: 100%;
   }
   .description {
     display: block;
     padding-left: 20px;
     width: 70%;
+  }
+}
+.tech {
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+.video {
+  iframe {
+    width: 100%;
+    @media #{$break-sm} {
+      height: 200px;
+    }
   }
 }
