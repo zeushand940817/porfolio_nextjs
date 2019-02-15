@@ -72,6 +72,9 @@ input[type="submit"] {
   width: 90%;
 }
 .photo {
+  p {
+    font-family: $font-main;
+  }
   img {
     display: block;
     max-width: 100%;
