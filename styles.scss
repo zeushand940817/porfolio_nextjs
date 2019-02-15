@@ -30,35 +30,44 @@ a {
     color: $color-secondary;
   }
 }
-input,
-textarea {
-  display: block;
-  width: 300px;
-  padding: 10px;
-  margin: 10px 0;
-  font-family: $font-main;
-  border: 1px solid $color-primary;
-  background: $color-bg;
-  &:focus {
-    border: 1px solid $color-accent;
-    outline-color: $color-accent;
-  }
-}
-input[type="submit"] {
-  cursor: pointer;
-  transition: 0.8s;
-  &:hover {
-    color: $color-accent;
-    border: 1px solid $color-accent;
-    outline-color: $color-accent;
-  }
-}
+
 .contact {
   margin: 0 100px;
   p {
     line-height: 24px;
-    &:last-child {
-      margin-top: 40px;
+  }
+  .description {
+    padding: 0 50px;
+  }
+  input,
+  textarea {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    font-family: $font-main;
+    // border: 1px solid $color-primary;
+    background: $color-bg;
+  }
+  input[type="submit"] {
+    display: block;
+    cursor: pointer;
+    width: 90%;
+    transition: 0.8s;
+  }
+  @media #{$break-sm} {
+    margin: 0;
+    .description {
+      padding: 0;
+    }
+    input[type="submit"] {
+      margin: auto;
+    }
+  }
+  @media #{$break-md} {
+    margin: 0;
+    .description {
+      padding: 0 5px;
     }
   }
 }

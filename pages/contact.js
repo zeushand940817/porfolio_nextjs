@@ -16,7 +16,14 @@ export default () => (
     <Layout>
       <h2>Say Hello.</h2>
       <div className="content contact">
-        <div className="gutter-100">
+        <div className="gutter-50">
+          <p className="description">
+            Whether its about potential work or you just want to geek out about
+            movies, I love to talk. Feel free to contact me on my form or send
+            me an email any time.
+          </p>
+        </div>
+        <div className="gutter-50">
           <form action="https://formspree.io/jp@jpkubala.com" method="POST">
             <input
               type="text"
@@ -28,11 +35,6 @@ export default () => (
             <textarea type="text" name="name" placeholder="Message" />
             <input type="submit" value="Submit" />
           </form>
-          <p>
-            Whether its about potential work or you just want to geek out about
-            movies, I love to talk. Feel free to contact me on my form or send
-            me an email any time.
-          </p>
           <p>
             303-919-5398 <br />
             jp@jpkubala.com
