@@ -10,7 +10,12 @@
 }
 .children {
   width: 100%;
-  // margin-left: 100px;
+  @media #{$break-sm} {
+    h2 {
+      font-size: 30px;
+      margin-top: 40px;
+    }
+  }
 }
 .brick {
   .caption {
@@ -36,6 +41,7 @@
   @media #{$break-sm} {
     .gutter-50 {
       width: 100%;
+      margin-bottom: 20px;
     }
   }
 }
