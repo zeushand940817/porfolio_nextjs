@@ -7,7 +7,10 @@
     margin: 10px;
     flex-wrap: wrap;
   }
-  @media #{$break-lg} {
+  @media #{$break-md} {
+    margin: 10px;
+  }
+  @media #{$break-lg-only} {
     margin: 30px;
   }
 }
@@ -57,9 +60,7 @@
 }
 .about {
   margin: 0 100px;
-  @media #{$break-md} {
-    margin: 0 50px;
-  }
+
   img {
     width: 100%;
   }
@@ -67,5 +68,19 @@
     font-family: $font-secondary;
     font-size: 16px;
     margin-top: 0;
+    padding-left: 20px;
+  }
+  @media #{$break-sm} {
+    margin: 0;
+  }
+  @media #{$break-md} {
+    margin: 20px;
+    p {
+      font-size: 14px;
+    }
+    .description {
+      padding-left: 10px;
+      padding-right: 30px;
+    }
   }
 }
