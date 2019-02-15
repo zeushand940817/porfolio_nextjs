@@ -3,13 +3,14 @@
 .layout {
   display: flex;
   margin: 50px;
+  @media #{$break-sm} {
+    margin: 10px;
+    flex-wrap: wrap;
+  }
 }
 .children {
   width: 100%;
-  margin-left: 100px;
-  @media #{$break-md} {
-    margin-left: 0px;
-  }
+  // margin-left: 100px;
 }
 .brick {
   .caption {

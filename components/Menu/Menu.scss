@@ -66,4 +66,16 @@
       display: inline-block;
     }
   }
+  @media #{$break-sm} {
+    min-width: 100%;
+    display: block;
+    h1 {
+      text-align: center;
+    }
+    ul.nav {
+      li {
+        display: inline-block;
+      }
+    }
+  }
 }
