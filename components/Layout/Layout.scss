@@ -67,26 +67,5 @@
     font-family: $font-secondary;
     font-size: 16px;
     margin-top: 0;
-    @media #{$break-sm} {
-      margin-top: 30px;
-    }
-    @media #{$break-md} {
-      font-size: 14px;
-      padding-right: 10%;
-      padding-left: 10%;
-    }
-    @media #{$break-lg} {
-      font-size: 14px;
-      padding-right: 10%;
-      padding-left: 10%;
-    }
-    @media #{$break-xl} {
-      padding-right: 15%;
-      padding-left: 10%;
-    }
-    @media #{$break-xxl} {
-      padding-right: 60%;
-      padding-left: 5%;
-    }
   }
 }
