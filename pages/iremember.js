@@ -4,12 +4,12 @@ import Brick from "../components/Brick/Brick.js";
 export default () => (
   <Layout>
     <h2>I Remember</h2>
-    <div className="wall detail">
-      <div className="col">
+    <div className="content video">
+      <div className="gutter-50">
         <iframe
           src="https://player.vimeo.com/video/32404666"
-          width="640"
-          height="360"
+          width="100%"
+          height="380"
           frameBorder="0"
           allowFullScreen
         />
@@ -19,7 +19,7 @@ export default () => (
           <a href="https://vimeo.com">Vimeo</a>.
         </p>
       </div>
-      <div className="col">
+      <div className="gutter-50">
         <p>
           I Remember, is an experimental 16mm movie shot on a Bolex camera. The
           purpose of the project was to try to implement as many in camera
