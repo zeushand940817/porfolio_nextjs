@@ -3,8 +3,8 @@ import Layout from "../components/Layout/Layout.js";
 export default () => (
   <Layout>
     <h2>Tic Tac Toe</h2>
-    <div className="wall detail">
-      <div className="col">
+    <div className="content tech">
+      <div className="gutter-50">
         <a href="https://tictactoe-220903.firebaseapp.com/">
           <img
             className="descrip-img"
@@ -12,7 +12,7 @@ export default () => (
           />
         </a>
       </div>
-      <div className="col">
+      <div className="gutter-50">
         <p>
           This is a Tic Tac Toe program written with a React Front End and a
           Flask Api. The application was an exploration in implementing the Min
