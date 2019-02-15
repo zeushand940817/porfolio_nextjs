@@ -73,6 +73,12 @@ input[type="submit"] {
 }
 .photo {
   img {
+    display: block;
     max-width: 100%;
+  }
+  .description {
+    display: block;
+    padding-left: 20px;
+    width: 70%;
   }
 }
