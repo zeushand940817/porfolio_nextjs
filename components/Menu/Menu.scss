@@ -72,8 +72,12 @@
     h1 {
       text-align: center;
     }
+    ul {
+      text-align: center;
+    }
     ul.nav {
       li {
+        padding: 0 10px;
         display: inline-block;
       }
     }
