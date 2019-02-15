@@ -9,12 +9,15 @@ export default () => (
       </div>
       <div className="gutter-50">
         <div className="description">
-          <p>Photography. Photojournalism</p>
           <p>
             In 2016 my friend Jacob and I embarked on a 3 day Adventure through
             some of the less known parts of southwestern colorado. The adventure
             included hiking a 14,000ft peak, going to a national park, and
             aligator wrestling.
+          </p>
+          <p>
+            <span className="bold">tools:</span> DSLR Photography.
+            Photojournalism.
           </p>
         </div>
       </div>
