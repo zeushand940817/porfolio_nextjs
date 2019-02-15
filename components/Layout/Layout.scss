@@ -39,6 +39,9 @@
     }
   }
   @media #{$break-sm} {
+    .gutter-33 {
+      width: 100%;
+    }
     .gutter-50 {
       width: 100%;
       margin-bottom: 20px;

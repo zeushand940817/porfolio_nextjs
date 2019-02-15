@@ -94,5 +94,8 @@ input[type="submit"] {
 .video {
   iframe {
     width: 100%;
+    @media #{$break-sm} {
+      height: 200px;
+    }
   }
 }
