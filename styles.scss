@@ -57,9 +57,9 @@ input[type="submit"] {
   margin: 0 100px;
   p {
     line-height: 24px;
-    &:last-child {
-      margin-top: 40px;
-    }
+  }
+  .description {
+    padding: 0 50px;
   }
 }
 .bold {
