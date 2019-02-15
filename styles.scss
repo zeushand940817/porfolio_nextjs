@@ -61,6 +61,12 @@ input[type="submit"] {
   .description {
     padding: 0 50px;
   }
+  @media #{$break-sm} {
+    margin: 0;
+    .description {
+      padding: 0;
+    }
+  }
 }
 .bold {
   font-weight: bold;
