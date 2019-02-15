@@ -41,7 +41,8 @@
       width: 100%;
     }
   }
-  @media #{$break-md} {
+  @media #{$break-sm} {
+    flex-wrap: wrap;
     .gutter-33 {
       width: 100%;
     }
@@ -50,7 +51,7 @@
       margin-bottom: 20px;
     }
   }
-  @media #{$break-lg} {
+  @media #{$break-lg-only} {
     flex-wrap: nowrap;
   }
 }

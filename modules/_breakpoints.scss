@@ -1,5 +1,4 @@
 $break-sm: "screen and (max-width: 425px)";
 $break-md: "screen and (max-width: 768px)";
 $break-lg: "screen and (max-width: 1024px)";
-$break-xl: "screen and (max-width: 1366px)";
-$break-xxl: "screen and (max-width: 1760px)";
+$break-lg-only: "screen and (min-width: 769px) and (max-width: 1024px)";
