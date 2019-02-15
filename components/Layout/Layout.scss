@@ -7,6 +7,9 @@
     margin: 10px;
     flex-wrap: wrap;
   }
+  @media #{$break-lg} {
+    margin: 30px;
+  }
 }
 .children {
   width: 100%;
@@ -28,7 +31,7 @@
   flex-wrap: wrap;
   .gutter {
     &-33 {
-      margin: 17px;
+      margin: 5px;
       width: 30%;
     }
     &-50 {
@@ -38,7 +41,7 @@
       width: 100%;
     }
   }
-  @media #{$break-sm} {
+  @media #{$break-md} {
     .gutter-33 {
       width: 100%;
     }
@@ -46,6 +49,9 @@
       width: 100%;
       margin-bottom: 20px;
     }
+  }
+  @media #{$break-lg} {
+    flex-wrap: nowrap;
   }
 }
 .about {
