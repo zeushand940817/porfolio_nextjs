@@ -35,7 +35,7 @@ export default () => (
           <Brick
             title="Southwest Colorado Photojournalism"
             source="/static/sw-colorado/IMG_9838.png"
-            link=""
+            link="/swcolorado"
           />
           <Brick
             title="I Remember 16mm Film"

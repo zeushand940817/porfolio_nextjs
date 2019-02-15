@@ -71,3 +71,17 @@ input[type="submit"] {
 .descrip-img {
   width: 90%;
 }
+.photo {
+  p {
+    font-family: $font-main;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  .description {
+    display: block;
+    padding-left: 20px;
+    width: 70%;
+  }
+}
