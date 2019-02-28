@@ -6,13 +6,15 @@ export default () => (
     <h2>The Mess</h2>
     <div className="content video">
       <div className="gutter-50">
-        <iframe
-          src="https://player.vimeo.com/video/36531214?byline=0&portrait=0"
-          width="100%"
-          height="480"
-          frameBorder="0"
-          allowFullScreen
-        />
+        <div className="video-container">
+          <iframe
+            src="https://player.vimeo.com/video/36531214?byline=0&portrait=0"
+            width="500px"
+            height="500px"
+            frameBorder="0"
+            allowFullScreen
+          />
+        </div>
       </div>
       <div className="gutter-50">
         <p>
