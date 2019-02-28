@@ -8,7 +8,6 @@ export default () => (
       <div className="gutter-50">
         <iframe
           src="https://player.vimeo.com/video/32404666"
-          width="100%"
           height="420"
           frameBorder="0"
           allowFullScreen
