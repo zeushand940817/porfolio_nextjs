@@ -9,7 +9,7 @@ export default () => (
         <iframe
           src="https://player.vimeo.com/video/36531214?byline=0&portrait=0"
           width="100%"
-          height="480"
+          height="420"
           frameBorder="0"
           allowFullScreen
         />

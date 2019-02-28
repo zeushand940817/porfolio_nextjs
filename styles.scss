@@ -46,7 +46,6 @@ a {
     padding: 10px;
     margin: 10px 0;
     font-family: $font-main;
-    // border: 1px solid $color-primary;
     background: $color-bg;
   }
   input[type="submit"] {
@@ -77,9 +76,6 @@ a {
 .detail {
   margin-top: 60px;
 }
-.descrip-img {
-  width: 90%;
-}
 .photo {
   p {
     font-family: $font-main;
@@ -99,10 +95,13 @@ a {
     display: block;
     width: 100%;
   }
+  .descrip-img {
+    width: 90%;
+  }
 }
 .video {
   iframe {
-    width: 100%;
+    width: 90%;
     @media #{$break-sm} {
       height: 200px;
     }
