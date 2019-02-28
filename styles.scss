@@ -107,3 +107,9 @@ a {
     }
   }
 }
+
+@media #{$break-md} {
+  .content .gutter-50 {
+    width: 100% !important;
+  }
+}
