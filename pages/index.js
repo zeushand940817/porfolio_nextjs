@@ -8,6 +8,7 @@ export default () => (
     <Layout>
       <div className="content">
         <div className="gutter-33">
+          <Brick title="Piano" source="/static/piano/piano.png" link="/piano" />
           <Brick
             title="The Oblong Adventure"
             source="/static/the_oblong_adventure/detail.png"
