@@ -146,10 +146,17 @@ a {
     animation-fill-mode: both;
   }
   #creative {
-    animation-delay: 1.5s;
+    animation-delay: 2s;
   }
   #technolighist {
-    animation-delay: 5s;
+    position: relative;
+    top: -70px;
+    animation-delay: 4s;
+  }
+  #story-teller {
+    position: relative;
+    top: -140px;
+    animation-delay: 6s;
   }
 }
 @keyframes text-fade {
@@ -164,8 +171,11 @@ a {
   0% {
     opacity: 0;
   }
-  50% {
-    opacity: 0.75;
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
   }
   100% {
     opacity: 0;
