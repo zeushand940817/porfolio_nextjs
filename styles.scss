@@ -125,7 +125,9 @@ a {
 .welcome {
   position: absolute;
   background-color: white;
-  height: 100%;
+  overflow: hidden;
+  height: 110%;
+  max-height: 110%;
   width: 100%;
   z-index: 1;
   animation: background-fade 2s ease-in;
