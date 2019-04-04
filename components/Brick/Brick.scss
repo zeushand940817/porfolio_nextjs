@@ -1,6 +1,7 @@
 @import "styles";
 
 .brick {
+  animation: fade 5s ease-in;
   width: 100%;
   margin-bottom: 23px;
   position: relative;
@@ -45,5 +46,13 @@
     display: hidden;
     margin-top: 10px;
     margin-left: 5px;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
