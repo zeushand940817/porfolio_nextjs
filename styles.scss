@@ -144,7 +144,12 @@ a {
     text-transform: lowercase;
     animation: text-fade-secondry 2s ease-in;
     animation-fill-mode: both;
+  }
+  #creative {
     animation-delay: 1.5s;
+  }
+  #technolighist {
+    animation-delay: 5s;
   }
 }
 @keyframes text-fade {
