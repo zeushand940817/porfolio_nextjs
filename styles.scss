@@ -122,3 +122,81 @@ a {
     width: 100% !important;
   }
 }
+.welcome {
+  position: absolute;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  animation: background-fade 2s ease-in;
+  animation-fill-mode: both;
+  animation-delay: 10s;
+  h1 {
+    font-family: $font-secondary;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 10%;
+    animation: text-fade 9s ease-in;
+    animation-fill-mode: both;
+  }
+  h2 {
+    font-family: $font-secondary;
+    font-size: 28px;
+    padding-top: 15px;
+    opacity: 1;
+    text-transform: lowercase;
+    animation: text-fade-secondry 2s ease-in;
+    animation-fill-mode: both;
+  }
+  #creative {
+    animation-delay: 2s;
+  }
+  #technolighist {
+    position: relative;
+    top: -70px;
+    animation-delay: 4s;
+  }
+  #story-teller {
+    position: relative;
+    top: -140px;
+    animation-delay: 6s;
+  }
+}
+@keyframes text-fade {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes text-fade-secondry {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes background-fade {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
+  }
+}
