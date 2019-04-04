@@ -5,6 +5,12 @@ import "../styles.scss";
 
 export default () => (
   <div>
+    <div className="welcome">
+      <h1>J Paul Kubala</h1>
+      <h2>creative.</h2>
+      <h2>technolighist.</h2>
+      <h2>story teller.</h2>
+    </div>
     <Layout>
       <div className="content">
         <div className="gutter-33">
@@ -48,6 +54,3 @@ export default () => (
     </Layout>
   </div>
 );
-
-//   </div>
-// </div>"

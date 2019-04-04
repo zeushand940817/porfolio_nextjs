@@ -122,3 +122,47 @@ a {
     width: 100% !important;
   }
 }
+.welcome {
+  position: absolute;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  h1 {
+    font-family: $font-secondary;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 10%;
+    animation: text-fade 2s ease-in;
+    animation-fill-mode: both;
+  }
+  h2 {
+    font-family: $font-secondary;
+    font-size: 28px;
+    padding-top: 15px;
+    opacity: 1;
+    text-transform: lowercase;
+    animation: text-fade-secondry 2s ease-in;
+    animation-fill-mode: both;
+    animation-delay: 1.5s;
+  }
+}
+@keyframes text-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes text-fade-secondry {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 0;
+  }
+}
