@@ -1,7 +1,8 @@
 @import "styles";
 
 .brick {
-  animation: fade 5s ease-in;
+  animation: fade 0.5s ease-in;
+  animation-fill-mode: both;
   width: 100%;
   margin-bottom: 23px;
   position: relative;
@@ -47,6 +48,12 @@
     margin-top: 10px;
     margin-left: 5px;
   }
+}
+.brick:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.myClass:nth-child(3) {
+  animation-delay: 1s;
 }
 @keyframes fade {
   0% {
