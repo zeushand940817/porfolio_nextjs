@@ -8,7 +8,7 @@ export default () => (
     <div className="welcome">
       <h1>J Paul Kubala</h1>
       <h2 id="creative">creative.</h2>
-      <h2 id="technolighist">technolighist.</h2>
+      <h2 id="technolighist">technologist.</h2>
       <h2 id="story-teller">story-teller.</h2>
     </div>
     <Layout>
