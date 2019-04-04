@@ -128,12 +128,15 @@ a {
   height: 100%;
   width: 100%;
   z-index: 1;
+  animation: background-fade 2s ease-in;
+  animation-fill-mode: both;
+  animation-delay: 10s;
   h1 {
     font-family: $font-secondary;
     text-align: center;
     font-size: 60px;
     padding-top: 10%;
-    animation: text-fade 2s ease-in;
+    animation: text-fade 9s ease-in;
     animation-fill-mode: both;
   }
   h2 {
@@ -163,8 +166,14 @@ a {
   0% {
     opacity: 0;
   }
-  100% {
+  20% {
     opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes text-fade-secondry {
@@ -175,6 +184,14 @@ a {
     opacity: 1;
   }
   60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes background-fade {
+  0% {
     opacity: 1;
   }
   100% {
