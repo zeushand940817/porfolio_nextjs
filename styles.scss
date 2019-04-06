@@ -2,6 +2,7 @@
 @import "modules/_colors";
 @import "modules/_grid";
 @import "modules/_breakpoints";
+@import "modules/_animations";
 
 body {
   background-color: $color-bg;
@@ -162,43 +163,5 @@ a {
     position: relative;
     top: -140px;
     animation-delay: 6s;
-  }
-}
-@keyframes text-fade {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes text-fade-secondry {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes background-fade {
-  0% {
-    opacity: 1;
-    z-index: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: 0;
   }
 }
